@@ -18,6 +18,12 @@ HOOKS_TEMPLATE_COMMITS["_adEq2_equals"]="ad35200fe3bb6b7f6a9e08bd2d83bc4857cd441
 HOOKS_TEMPLATE_COMMITS["_adEq2_memcmp"]="ad35200fe3bb6b7f6a9e08bd2d83bc4857cd441e"
 HOOKS_TEMPLATE_COMMITS["__equals_memcmp"]="ad35200fe3bb6b7f6a9e08bd2d83bc4857cd441e"
 
+_aa_hooks=("_aaGetHash" "_aaEqual" "_aaKeys" "_aaDel" "_aaIn" "_aaGetX" "_aaDup" "_d_assocarrayliteralTX")
+for hook in "${_aa_hooks[@]}"; do
+	HOOKS_TEMPLATE_COMMITS[$hook]="7850a80112e12c29ed8339d5deff2a1e9f1bae1b"
+	HOOKS_NON_TEMPLATE_COMMITS[$hook]="c2c8189599b894771393100ceae1ca2da30202d0"
+done
+
 declare -A HOOKS_NON_TEMPLATE_COMMITS
 HOOKS_NON_TEMPLATE_COMMITS["_d_arraysetcapacity"]="master"
 HOOKS_NON_TEMPLATE_COMMITS["_d_dynamic_cast"]="99a390f3c6bae3b30c469222a9846273d300c407"
