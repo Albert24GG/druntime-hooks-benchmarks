@@ -5,7 +5,7 @@ import std.datetime.stopwatch : benchmark;
 import std.math : sqrt;
 import std.algorithm : reduce;
 
-enum hooks = ["_d_arrayctor", "_d_arrayappendT", "_d_arraycatT",
+enum hooks = ["_d_arrayctor", "_d_arrayappendT", "_d_arrayappendcTX", "_d_arraycatT",
     "_d_arraycatnTX", "_d_arrayassign", "_d_newarrayT", "_d_newarrayiT",
     "_d_arraysetcapacity", "_d_newarraymTX_2D", "_d_newarraymTX_3D",
     "_d_dynamic_cast", "_d_paint_cast", "_d_class_cast", "_d_interface_cast",
